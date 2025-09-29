@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #212D1A;
+}
+
+.navbc {
+    background-color: rgba(28, 30, 16, 0.813);
+    padding: 7px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.dirnav {
+    margin-right: 4%;
+}
+
+.homepagebc {
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.navbc a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 15px;
+
+    &:hover{
+        color: #EEBE7B;
+    }
+
+    &.active{
+        color: #EEBE7B;
+    }
+}
+
+.logobcso {
+    height: 40px;
+}
+
+.news{
+    background-color: #ffffff;
+    height: 160dvh;
+    margin-top: 7%;
+}
+
+.imgnews{
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 3%;
+}
+
+.txtnw {
+    margin-top: 5%;
+}
+
+.txtnw h5{
+    text-align: end;
+    font-size: 1.2rem;
+    margin: 10px 20px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #1C1E10;
+}
+
+.txtnw h1 {
+    font-size: 2.2rem;
+    margin: 10px 20px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #1C1E10;
+}
+
+.newsp p {
+    width: 80%;
+    margin: 10px 20px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #555;
+    line-height: 1.8;
+}
+
+.footer {
+    background-color: #354b27;
+    color: white;
+    padding: 30px 10%;
+    font-family: Arial, sans-serif;
+}
+
+.footerall {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footerlg img {
+    max-height: 150px;
+}
+
+.footerinfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dep {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.imgpers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    width: 36px;
+    height: 36px;
+}
+
+.txtdep p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footerinfo hr {
+    border: none;
+    border-top: 2px solid rgb(255, 255, 255);
+    margin: 10px 0;
+}
+
+.footer911 img {
+    margin-top: -90%;
+    margin-left: 57%;
+    max-height: 50px;
+}
+
+.footerabt {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footerabt p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+}
+
+.dev p{
+    color: #92a588;
+}
+
+@media (max-width: 768px) {
+    .banner h2 {
+        font-size: 2rem;
+    }
+    
+    .banner-text {
+        font-size: 1.8rem;
+    }
+
+    .headsnv{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbc{
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+}

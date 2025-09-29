@@ -1,0 +1,32 @@
+const bnn = document.getElementById("bnn");
+const img = ["https://media.discordapp.net/attachments/893555115611553862/1421907420350910494/3.png?ex=68dabdfa&is=68d96c7a&hm=1c19045584a69401fda5c6b0b63b9c90a78251fc17ac4fbc623d930a89643b75&=&format=webp&quality=lossless&width=914&height=514", 
+    "https://media.discordapp.net/attachments/893555115611553862/1421907256433311895/23.png?ex=68dabdd3&is=68d96c53&hm=34775a9de31e7baa3495bbf583f08ca0c708f350f218ff649361db113ab897f2&=&format=webp&quality=lossless&width=914&height=514", 
+    "https://media.discordapp.net/attachments/893555115611553862/1421908416439386203/22.png?ex=68dabee8&is=68d96d68&hm=055663f31cb478c399408731c32c4c2b47df98fbb335e84ae1f2d804b6f677b6&=&format=webp&quality=lossless&width=914&height=514", 
+    "https://media.discordapp.net/attachments/893555115611553862/1421908581275533443/stillhoop.png?ex=68dabf0f&is=68d96d8f&hm=1410bc06f20b85ad611be748e75dcc3a17d3cafb4f8c2905d9e9053f335bc4d8&=&format=webp&quality=lossless&width=914&height=514", 
+    "https://media.discordapp.net/attachments/893555115611553862/1421908891347718296/27.png?ex=68dabf59&is=68d96dd9&hm=af0df0106303d1a23bed8064e067754c4003600f82328a6ede9e4b5846328707&=&format=webp&quality=lossless&width=926&height=514", 
+    "https://media.discordapp.net/attachments/893555115611553862/1421908166957863004/1.png?ex=68dabeac&is=68d96d2c&hm=57af27c66c4ea77b146deaca1496365b0d3ccf2ea5780629a7755c8b7d6af957&=&format=webp&quality=lossless&width=914&height=514", 
+    "https://media.discordapp.net/attachments/893555115611553862/1421907256433311895/23.png?ex=68dabdd3&is=68d96c53&hm=34775a9de31e7baa3495bbf583f08ca0c708f350f218ff649361db113ab897f2&=&format=webp&quality=lossless&width=914&height=514", 
+    "https://media.discordapp.net/attachments/893555115611553862/1421906306738032721/13.png?ex=68dabcf1&is=68d96b71&hm=5ca59b3bbc0050c8a0e49cfeffcaab0e1013b1a605d30c1add187cf52dab8455&=&format=webp&quality=lossless&width=1115&height=467",
+    "https://media.discordapp.net/attachments/893555115611553862/1421909087960174602/16.png?ex=68dabf88&is=68d96e08&hm=8c5d61886d6d9f2533c3837dfbdccaf428ba415c9812192461f9658a51df336f&=&format=webp&quality=lossless&width=914&height=514",
+    "https://media.discordapp.net/attachments/893555115611553862/1421909246253076571/arrest.png?ex=68dabfae&is=68d96e2e&hm=7873077635ae130f83ec8ddc35cbb1dcfd0a043465025cd110dc74a1a46ba86d&=&format=webp&quality=lossless&width=1115&height=416",
+    "https://media.discordapp.net/attachments/893555115611553862/1421909503330357471/25.png?ex=68dabfeb&is=68d96e6b&hm=41caf8b1c35febcac2cbbf562eb2ade18af608e24623db427843344c9b2bf97c&=&format=webp&quality=lossless&width=944&height=514",
+    "https://media.discordapp.net/attachments/893555115611553862/1421909695534207148/28.png?ex=68dac019&is=68d96e99&hm=b5c93e569b94a44055ceea2548e787d1401e26f1d4e736102a0cc9a422655ea3&=&format=webp&quality=lossless&width=926&height=514",
+    "https://media.discordapp.net/attachments/893555115611553862/1421909998367150080/29.png?ex=68dac061&is=68d96ee1&hm=29c7cdcaba5e998e3dd0941e95f16d7c9921cba9f7ce949e7cf56ce6b44f7f61&=&format=webp&quality=lossless&width=1061&height=514",
+    "https://media.discordapp.net/attachments/893555115611553862/1421910153434890441/21.png?ex=68dac086&is=68d96f06&hm=f46a93078506424d2ed2b5d2bab793708147696ae909e4b54753d6bdad915bec&=&format=webp&quality=lossless&width=914&height=514",
+    "https://media.discordapp.net/attachments/893555115611553862/1421910360851611789/10.png?ex=68dac0b7&is=68d96f37&hm=4b3b8ac7e1f6dab2e5de98eae873487285422a3ed01de1526d843bf02c2c5895&=&format=webp&quality=lossless&width=1115&height=467",
+    "https://media.discordapp.net/attachments/893555115611553862/1421911145916399616/9.png?ex=68dac173&is=68d96ff3&hm=07f17faeb6a6bdba06e8eedac4bedf50727233248ce8e4367152275bf0faca6f&=&format=webp&quality=lossless&width=914&height=514",
+    "https://media.discordapp.net/attachments/893555115611553862/1421911592261521538/DDSheriff.png?ex=68dac1dd&is=68d9705d&hm=18e0620a11b78885a01960a603583bdb014eeea2237ebc4e9334506c6268f620&=&format=webp&quality=lossless&width=914&height=514",
+    "https://media.discordapp.net/attachments/893555115611553862/1421911724415651941/2.png?ex=68dac1fc&is=68d9707c&hm=288424c5099799577aae78c291a51ac01f55851fca81db3a40c285dd357235a8&=&format=webp&quality=lossless&width=914&height=514",
+    "https://media.discordapp.net/attachments/893555115611553862/1421911786499608801/6.png?ex=68dac20b&is=68d9708b&hm=b7b91954b8a0a5d03843fc5c72785d69338605360d9ea5423028b5cd514d90c0&=&format=webp&quality=lossless&width=1073&height=514",
+    "https://media.discordapp.net/attachments/893555115611553862/1421912364634079483/brass.png?ex=68dac295&is=68d97115&hm=d8c7a1819630129966d3130c794e809342388f518c0d877e166445707747c8ea&=&format=webp&quality=lossless&width=921&height=514",
+    "https://media.discordapp.net/attachments/893555115611553862/1421926227219976392/image_25.png?ex=68dacf7e&is=68d97dfe&hm=924afefa56087a35ac337b18dceb79226e00df2e452a7efc760067456f408eff&=&format=webp&quality=lossless&width=936&height=513",
+    "https://media.discordapp.net/attachments/893555115611553862/1421905966336577667/31.png?ex=68dabca0&is=68d96b20&hm=ddc07d8b1569720d689d16a0e9be0e90d3367b6104a61d10890db0d3121d5a87&=&format=webp&quality=lossless&width=550&height=306",
+    "https://media.discordapp.net/attachments/893555115611553862/1421931949831749794/26.png?ex=68dad4d3&is=68d98353&hm=4516881fe7011c7ff8605cd15eb443dd40c4dd4849662063dca936b74f56ec41&=&format=webp&quality=lossless&width=929&height=514",
+    "https://media.discordapp.net/attachments/893555115611553862/1421932319522160791/m2cFQ5A.png?ex=68dad52b&is=68d983ab&hm=b2554d235ab3f1b6aa5011c62aaa76993ec8378d6178ee565fd336238fc3f7ac&=&format=webp&quality=lossless&width=1115&height=279",
+    "https://media.discordapp.net/attachments/893555115611553862/1421932853125710066/image.png?ex=68dad5aa&is=68d9842a&hm=03dc7e56950818b54d36e56fb7d977dbc36bf192f55731ad5e4da799050239a7&=&format=webp&quality=lossless&width=914&height=514"
+
+];
+
+const aleatoriedade = Math.floor(Math.random() * img.length);
+
+bnn.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(${img[aleatoriedade]})`;
