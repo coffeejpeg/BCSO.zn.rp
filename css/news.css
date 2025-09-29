@@ -214,25 +214,117 @@ body {
     color: #92a588;
 }
 
-@media (max-width: 768px) {
-    .banner h2 {
-        font-size: 2rem;
-    }
-    
+/* Tablet */
+@media (max-width: 1024px) {
     .banner-text {
-        font-size: 1.8rem;
+        font-size: 32px;
+        text-align: center;
     }
 
-    .headsnv{
+    .Texx {
+        margin-left: 10%;
+    }
+
+    .aboutnews {
+        width: 80%;
+        gap: 80px;
+    }
+
+    .downs {
+        width: 250px;
+        margin-left: -35%;
+    }
+
+    .imgandtx {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* Celular */
+@media (max-width: 768px) {
+    .navbc {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 10px;
+    }
+
+    .navbc a {
+        margin: 8px 0;
+        font-size: 1rem;
+    }
+
+    .banner, #bnn {
+        height: 400px;
+        padding: 0 10px;
+    }
+
+    .banner-text {
+        font-size: 24px;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .Texx {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .imgandtx {
         flex-direction: column;
         gap: 20px;
     }
 
-    .navbc{
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
+    .aboutnews {
+        width: 95%;
+        gap: 20px;
+        margin: 0 auto;
+        text-align: justify;
     }
 
+    .downs {
+        width: 200px;
+        margin-left: 0;
+        margin: 0 auto;
+    }
 
+    .footerall {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer911 img {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+
+/* Celular pequeno */
+@media (max-width: 480px) {
+    .banner {
+        height: 300px;
+    }
+
+    .banner-text {
+        font-size: 20px;
+    }
+
+    .Texx a, .Tnw a {
+        font-size: 1.2rem;
+    }
+
+    .aboutnews {
+        width: 100%;
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+
+    .downs {
+        width: 150px;
+    }
+
+    .footerabt p {
+        font-size: 12px;
+    }
 }
