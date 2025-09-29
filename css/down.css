@@ -166,25 +166,129 @@ body {
     color: #92a588;
 }
 
-@media (max-width: 768px) {
-    .banner h2 {
-        font-size: 2rem;
-    }
-    
-    .banner-text {
-        font-size: 1.8rem;
+/* Tablet */
+@media (max-width: 1024px) {
+    /* Navbar */
+    .navbc {
+        padding: 10px 15px;
     }
 
-    .headsnv{
-        flex-direction: column;
+    .navbc a {
+        margin: 0 10px;
+        font-size: 0.95rem;
+    }
+
+    /* News */
+    .txtnw h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .txtnw h5 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .newsp p {
+        width: 90%;
+        margin: 10px auto;
+        font-size: 1rem;
+    }
+
+    .imgnews {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    /* Footer */
+    .footerall {
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 20px;
     }
 
-    .navbc{
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
+    .footer911 img {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+
+/* Celular */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbc {
+        flex-direction: column;
+        align-items: center;
     }
 
+    .navbc a {
+        margin: 8px 0;
+        font-size: 1rem;
+    }
 
+    .homepagebc {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* News */
+    .txtnw h1 {
+        font-size: 1.5rem;
+    }
+
+    .txtnw h5 {
+        font-size: 0.9rem;
+    }
+
+    .newsp p {
+        font-size: 0.95rem;
+        width: 95%;
+    }
+
+    .imgnews {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Footer */
+    .footerall {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer911 img {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
+/* Celular pequeno */
+@media (max-width: 480px) {
+    /* Navbar */
+    .navbc a {
+        font-size: 0.9rem;
+    }
+
+    /* News */
+    .txtnw h1 {
+        font-size: 1.2rem;
+    }
+
+    .txtnw h5 {
+        font-size: 0.8rem;
+    }
+
+    .newsp p {
+        font-size: 0.9rem;
+    }
+
+    .imgnews {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footerabt p {
+        font-size: 12px;
+    }
 }
