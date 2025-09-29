@@ -166,25 +166,122 @@ body {
     color: #92a588;
 }
 
-@media (max-width: 768px) {
-    .banner h2 {
-        font-size: 2rem;
+/* =========================
+   RESPONSIVIDADE
+   ========================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .imgnews {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
     }
-    
-    .banner-text {
+
+    .txtnw h5 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .txtnw h1 {
         font-size: 1.8rem;
+        text-align: center;
     }
 
-    .headsnv{
-        flex-direction: column;
-        gap: 20px;
+    .newsp p {
+        width: 90%;
+        font-size: 1rem;
+        margin: 10px auto;
     }
 
-    .navbc{
-        gap: 15px;
+    .footerall {
         flex-wrap: wrap;
         justify-content: center;
     }
+}
 
+/* Celular */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbc {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 10px;
+    }
 
+    .navbc a {
+        margin: 8px 0;
+        font-size: 1rem;
+    }
+
+    .homepagebc {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* News */
+    .news {
+        height: auto;
+        padding: 20px 10px;
+        margin-top: 12%;
+    }
+
+    .imgnews {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    .txtnw h5 {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .txtnw h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .newsp p {
+        width: 95%;
+        font-size: 1rem;
+        text-align: justify;
+        margin: 10px auto;
+    }
+
+    /* Footer */
+    .footerall {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer911 img {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
+/* Celular pequeno */
+@media (max-width: 480px) {
+    .txtnw h5 {
+        font-size: 0.8rem;
+    }
+
+    .txtnw h1 {
+        font-size: 1.2rem;
+    }
+
+    .newsp p {
+        font-size: 0.9rem;
+    }
+
+    .imgnews {
+        width: 100%;
+    }
+
+    .footerabt p {
+        font-size: 12px;
+    }
 }
