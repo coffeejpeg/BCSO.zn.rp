@@ -210,11 +210,37 @@ body {
     color: #92a588;
 }
 
-@media (max-width: 768px) {
-    .banner h2 {
+/* Tablets */
+@media (max-width: 1024px) {
+    .banner-text {
         font-size: 2rem;
     }
-    
+    .texthis h2 {
+        font-size: 2rem;
+    }
+    .seargentes, .deputys {
+        gap: 40px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+    .navbc {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .navbc a {
+        margin: 8px 0;
+        font-size: 1rem;
+    }
+
+    .banner {
+        height: auto;
+        padding: 80px 20px;
+    }
+
     .banner-text {
         font-size: 1.8rem;
     }
@@ -224,10 +250,33 @@ body {
         gap: 20px;
     }
 
-    .navbc{
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
+    .footerall {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer911 img {
+        margin: 20px auto 0;
+    }
+}
+
+/* Celulares muito pequenos */
+@media (max-width: 480px) {
+    .banner-text {
+        font-size: 1.3rem;
+    }
+
+    .texthis h2 {
+        font-size: 1.5rem;
+    }
+
+    .imgof img {
+        width: 90%;
+        height: auto;
+    }
+
+    .footerabt p {
+        font-size: 12px;
     }
 
 
