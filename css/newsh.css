@@ -178,25 +178,94 @@ body {
     color: #92a588;
 }
 
+/* Tablet */
+@media (max-width: 1024px) {
+    .imgnews {
+        width: 70%;
+    }
+
+    .txtnw h4 {
+        font-size: 1.3rem;
+    }
+
+    .txtnw h5 {
+        font-size: 1rem;
+    }
+
+    .newsp p {
+        width: 90%;
+        font-size: 1rem;
+    }
+}
+
+/* Celular */
 @media (max-width: 768px) {
-    .banner h2 {
-        font-size: 2rem;
-    }
-    
-    .banner-text {
-        font-size: 1.8rem;
-    }
-
-    .headsnv{
+    .navbc {
         flex-direction: column;
-        gap: 20px;
-    }
-
-    .navbc{
         gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
+        padding: 15px;
     }
 
+    .navbc a {
+        margin: 8px 0;
+        font-size: 1rem;
+    }
 
+    .news {
+        height: auto;
+        padding: 20px;
+        margin-top: 10%;
+    }
+
+    .imgnews {
+        width: 90%;
+    }
+
+    .txtnw h4 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .txtnw h5 {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .newsp p {
+        width: 95%;
+        margin: 10px auto;
+        font-size: 1rem;
+    }
+
+    .footerall {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer911 img {
+        margin: 20px auto 0;
+    }
+}
+
+/* Celular pequeno */
+@media (max-width: 480px) {
+    .txtnw h4 {
+        font-size: 1rem;
+    }
+
+    .txtnw h5 {
+        font-size: 0.8rem;
+    }
+
+    .newsp p {
+        font-size: 0.9rem;
+    }
+
+    .imgnews {
+        width: 100%;
+    }
+
+    .footerabt p {
+        font-size: 12px;
+    }
 }
